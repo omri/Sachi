@@ -1,3 +1,23 @@
 .page-wrapper {
 	width: 960px;
 }
+
+.page-context {
+	float: right;
+	width: 35%;
+	margin-top: 10px;
+	background-color: rgb(239, 239, 239);
+}
+
+.brand-stripe {
+	background: rgb(0, 82, 156);
+	height: 100px;
+	position: relatives;
+}
+
+.page-description {
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
