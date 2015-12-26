@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Inline Video Gallery
-Plugin URI: http://....org/#
-Description: Yayyy
+Plugin URI: https://github.com/omri/Sachi
+Description: Creates a video gallery for the Sachi project
 Author: Yuval Kohavi
 Version: 0.1
 Author URI: http://yuval.kohavi.info/
