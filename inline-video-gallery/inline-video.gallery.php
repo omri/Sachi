@@ -8,6 +8,10 @@ Version: 0.1
 Author URI: http://yuval.kohavi.info/
 */
 
+function arr_get($array, $key, $default = ""){
+    return isset($array[$key]) ? $array[$key] : $default;
+}
+
 
 class Gallery_Shortcode {
 	static $gallery_add_script;
@@ -55,9 +59,20 @@ class Gallery_Shortcode {
 
         </div>
       </div>
-    </div>
-    <div style="float:left" >
-שם שם שם
+
+			<div class="titleBoxInfo" >
+				<?php echo arr_get($atts, "name"); ?> <br />
+				<?php echo arr_get($atts, "title"); ?>
+
+				<?php if (isset($atts["link"])) {
+				?>
+				<a href="<?php echo arr_get($atts, "link"); ?>">עוד</a>
+				<?php
+				} ?>
+
+			</div>
+
+
     </div>
 
   </div>

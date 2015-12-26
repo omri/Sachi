@@ -41,6 +41,7 @@ function preparePlayers() {
           var player = new YT.Player(playerElement, {
               height: '100%',
               width: '100%',
+              playerVars: {'controls': 0 },
               videoId: videoId,
               events: {
                 'onReady': onPlayerReady,
@@ -61,24 +62,54 @@ function preparePlayers() {
   // 5. The API calls this function when the player's state changes.
   //    The function indicates that when playing a video (state=1),
   //    the player should play for six seconds and then stop.
-  var done = false;
   function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING && !done) {
-      setTimeout(function(){stopVideo(event.target)}, 6000);
-      done = true;
+    if (event.data == YT.PlayerState.ENDED) {
+
+//      setTimeout(function(){stopVideo(event.target)}, 6000);
+
     }
   }
   function stopVideo(player) {
     player.stopVideo();
   }
 
-function playVid(event) {
 
-  for (var vid in playerById) {
-    playerById[vid].stopVideo();
+  function playVid(event) {
+
+    jqElem = jQuery(event.target)
+    jqElem.toggleClass("active")
+
+    if (jqElem.hasClass("active")) {
+      for (var vid in playerById) {
+        playerById[vid].stopVideo();
+      }
+      var vid = jqElem.closest(".boxInner").children(".player")[0].dataset.vid;
+      playerById[vid].playVideo();
+
+    } else {
+      playerById[vid].pauseVideo();
+    }
   }
-  var vid = jQuery(event.target).closest(".boxInner").children(".player")[0].dataset.vid;
-  playerById[vid].playVideo();
-}
 
-jQuery(".play-button").click(playVid)
+
+  function playVid(event) {
+
+    jqElem = jQuery(event.target)
+    var boxInner = jqElem.closest(".boxInner")
+    var vid = boxInner.children(".player")[0].dataset.vid;
+    var playbutton = boxInner.find(".playbutton");
+    playbutton.toggleClass("active")
+
+    if (playbutton.hasClass("active")) {
+      for (var othervid in playerById) {
+        playerById[othervid].stopVideo();
+      }
+      playerById[vid].playVideo();
+
+    } else {
+      playerById[vid].pauseVideo();
+    }
+  }
+
+
+jQuery(".playbutton").click(playVid)
