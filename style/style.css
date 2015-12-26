@@ -11,6 +11,11 @@ body {
 
 .page-wrapper {
 	width: 960px;
+	padding-top: 20px;
+}
+
+.site-header {
+	margin-bottom: 10px;
 }
 
 .page-context {
@@ -19,6 +24,8 @@ body {
 	margin-top: 10px;
 	background-color: rgb(239, 239, 239);
 	min-height: 120px;
+	text-align: left;
+    padding: 10px 15px;
 }
 
 .page-name {
@@ -44,4 +51,8 @@ body {
 .page-description-inner {
 	color: white;
 	margin-right: 20px;
+}
+
+.page-nav {
+	list-style: none;
 }
