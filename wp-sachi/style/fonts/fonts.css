@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Next Exit Round Regular';
+  src: url('NextExitRound-Regular.eot'); /* IE9 Compat Modes */
+  src: url('NextExitRound-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('NextExitRound-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('NextExitRound-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Next Exit Round Bold';
+  	src: url('NextExitRound-Bold.eot'); /* IE9 Compat Modes */
+  	src: url('NextExitRound-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       	url('NextExitRound-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('NextExitRound-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Next Exit Round Light';
+  	src: url('NextExitRound-Light.eot'); /* IE9 Compat Modes */
+  	src: url('NextExitRound-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       	url('NextExitRound-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       	url('NextExitRound-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
