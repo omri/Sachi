@@ -61,3 +61,47 @@ body {
 .page-nav {
 	list-style: none;
 }
+
+.font1WhenActive{
+	font-family: 'Next Exit Round Regular';
+	color: black;
+	font-size: 24pt;
+}
+
+.font1WhenNotActive{
+	font-family: 'Next Exit Round Light';
+	color: black;
+	font-size: 24pt;
+}
+
+.font2{
+	font-family: 'Next Exit Round light';
+	color: black;
+	font-size: 30pt;
+}
+
+.font3{
+	color:black;
+	font-size: 24pt;
+	font-family: 'Next Exit Round light';
+}
+
+.font4,
+.site-nav a,
+.site-nav {
+	color: rgb(147,149,152);
+}
+
+.font4active{
+  color: rgb(0, 82, 156) !important;
+}
+
+.font5{
+	font-family: 'Next Exit Round light';
+	font-size: 45pt;
+}
+
+.font6{
+	font-size: 45pt;
+	color: rgb(0, 82, 156);
+}
