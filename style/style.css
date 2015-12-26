@@ -1,3 +1,8 @@
+/**
+Theme Name: Sachi theme
+Theme Description: Sachi theme
+*/
+
 @import "fonts/fonts.css";
 
 body {
@@ -6,24 +11,48 @@ body {
 
 .page-wrapper {
 	width: 960px;
+	padding-top: 20px;
+}
+
+.site-header {
+	margin-bottom: 10px;
 }
 
 .page-context {
 	float: right;
-	width: 35%;
+	width: 100%;
 	margin-top: 10px;
 	background-color: rgb(239, 239, 239);
 	min-height: 120px;
+	text-align: left;
+    padding: 10px 15px;
+	min-width: 200px;
+}
+
+
+.sub-menu {
+	margin: 5%;
+	padding: 0;
+}
+
+.sub-menu-item {
+	list-style-type: none;
+	border-bottom-style: solid;
+}
+
+.sub-menu-border {
+	list-style-type: none;
+	border-bottom-style: solid;
 }
 
 .page-name {
+	margin: 5%;
 	color: rgb(0, 82, 156);
 }
 
 .brand-stripe {
 	background: rgb(0, 82, 156);
 	height: 100px;
-	position: relatives;
 	padding-top: 20px;
 }
 
@@ -40,4 +69,52 @@ body {
 .page-description-inner {
 	color: white;
 	margin-right: 20px;
+}
+
+.page-nav {
+	list-style: none;
+}
+
+.font1WhenActive{
+	font-family: 'Next Exit Round Regular';
+	color: black;
+	font-size: 24pt;
+}
+
+.font1WhenNotActive{
+	font-family: 'Next Exit Round Light';
+	color: black;
+	font-size: 24pt;
+}
+
+.font2{
+	font-family: 'Next Exit Round light';
+	color: black;
+	font-size: 30pt;
+}
+
+.font3{
+	color:black;
+	font-size: 24pt;
+	font-family: 'Next Exit Round light';
+}
+
+.font4,
+.site-nav a,
+.site-nav {
+	color: rgb(147,149,152);
+}
+
+.font4active{
+  color: rgb(0, 82, 156) !important;
+}
+
+.font5{
+	font-family: 'Next Exit Round light';
+	font-size: 45pt;
+}
+
+.font6{
+	font-size: 45pt;
+	color: rgb(0, 82, 156);
 }
