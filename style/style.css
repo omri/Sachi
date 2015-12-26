@@ -29,11 +29,24 @@ body {
 	min-width: 200px;
 }
 
+
+.sub-menu {
+	margin: 5%;
+	padding: 0;
+}
+
 .sub-menu-item {
 	list-style-type: none;
+	border-bottom-style: solid;
+}
+
+.sub-menu-border {
+	list-style-type: none;
+	border-bottom-style: solid;
 }
 
 .page-name {
+	margin: 5%;
 	color: rgb(0, 82, 156);
 }
 
