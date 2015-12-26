@@ -15,10 +15,14 @@ body {
 
 .page-context {
 	float: right;
-	width: 35%;
+	width: 100%;
 	margin-top: 10px;
 	background-color: rgb(239, 239, 239);
-	min-height: 120px;
+	min-width: 200px;
+}
+
+.sub-menu-item {
+	list-style-type: none;
 }
 
 .page-name {
@@ -45,3 +49,4 @@ body {
 	color: white;
 	margin-right: 20px;
 }
+
